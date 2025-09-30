@@ -1,0 +1,23 @@
+package question2;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Numbersdivisibleby5 {
+
+	public static void main(String[] args) {
+		List<Integer> numbers = new ArrayList<>(Arrays.asList(1, 4, 5, 20, 30, 6));
+
+        System.out.println("Numbers divisible by 5:");
+
+        numbers.stream()
+               .filter(num -> num % 5 == 0)  
+               .forEach(System.out::println); 
+    }
+		
+		
+
+	}
+
+
